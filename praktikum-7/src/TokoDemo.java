@@ -1,48 +1,48 @@
 public class TokoDemo {
     public static void main(String[] args) {
-        Produk[] daftarProduk = {
-                new Produk("P001", "Mouse", 150000.0, 10),
-                new Produk("P002", "Keyboard", 300000.0, 8),
-                new Produk("P003", "Monitor", 2000000.0, 5),
-                new Produk("P004", "Headset", 350000.0, 9),
-                new Produk("P005", "WebCam", 1000000.0, 7)
+        Produkm6[] daftarProdukm6 = {
+                new Produkm6("P001", "Mouse", 150000.0, 10),
+                new Produkm6("P002", "Keyboard", 300000.0, 8),
+                new Produkm6("P003", "Monitor", 2000000.0, 5),
+                new Produkm6("P004", "Headset", 350000.0, 9),
+                new Produkm6("P005", "WebCam", 1000000.0, 7)
         };
 
         //  Menampilkan seluruh daftar produk
         System.out.println("Daftar Produk");
-        for (Produk p : daftarProduk) {
+        for (Produkm6 p : daftarProdukm6) {
             p.tampilkanData();
             System.out.println();
         }
 
         //  Simulasi Pembelian Pertama (Mouse)
         System.out.println("Simulasi Pembelian Pertama");
-        Produk produk1 = daftarProduk[0]; // Mouse
+        Produkm6 produkm61 = daftarProdukm6[0]; // Mouse
         int jumlahBeli1 = 2;
-        System.out.println("Nama Produk : " + produk1.namaProduk);
+        System.out.println("Nama Produk : " + produkm61.namaProduk);
         System.out.println("Jumlah Beli : " + jumlahBeli1);
-        System.out.println("Total Harga : Rp." + produk1.hitungTotalBeli(jumlahBeli1));
-        produk1.kurangiStok(jumlahBeli1);
+        System.out.println("Total Harga : Rp." + produkm61.hitungTotalBeli(jumlahBeli1));
+        produkm61.kurangiStok(jumlahBeli1);
         System.out.println();
 
         //  Simulasi Pembelian Kedua (Keyboard)
         System.out.println("Simulasi Pembelian Kedua");
-        Produk produk2 = daftarProduk[1]; // Keyboard
+        Produkm6 produkm62 = daftarProdukm6[1]; // Keyboard
         int jumlahBeli2 = 10;
-        System.out.println("Nama Produk : " + produk2.namaProduk);
+        System.out.println("Nama Produk : " + produkm62.namaProduk);
         System.out.println("Jumlah Beli : " + jumlahBeli2);
-        System.out.println("Total Harga : Rp." + produk2.hitungTotalBeli(jumlahBeli2));
-        produk2.kurangiStok(jumlahBeli2);
+        System.out.println("Total Harga : Rp." + produkm62.hitungTotalBeli(jumlahBeli2));
+        produkm62.kurangiStok(jumlahBeli2);
         System.out.println();
 
         //  Mencari dan Menampilkan Produk Termahal
         System.out.println("Produk dengan Harga Termahal");
-        Produk produkTermahal = daftarProduk[0];
-        for (int i = 1; i < daftarProduk.length; i++) {
-            if (daftarProduk[i].harga > produkTermahal.harga) {
-                produkTermahal = daftarProduk[i];
+        Produkm6 produkm6Termahal = daftarProdukm6[0];
+        for (int i = 1; i < daftarProdukm6.length; i++) {
+            if (daftarProdukm6[i].harga > produkm6Termahal.harga) {
+                produkm6Termahal = daftarProdukm6[i];
             }
         }
-        produkTermahal.tampilkanData();
+        produkm6Termahal.tampilkanData();
     }
 }

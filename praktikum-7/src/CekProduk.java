@@ -1,8 +1,8 @@
 public class CekProduk {
     public static void main(String[] args) {
-        Produk p1 = new Produk("Mouse", 150000);
-        Produk p2 = new Produk("Keyboard", 350000);
-        Produk p3 = new Produk("Monitor", 2000000);
+        Produkm6 p1 = new Produkm6("Mouse", 150000);
+        Produkm6 p2 = new Produkm6("Keyboard", 350000);
+        Produkm6 p3 = new Produkm6("Monitor", 2000000);
 
         // Menentukan batas harga
         double batasHarga = 500000;
